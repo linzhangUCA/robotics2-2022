@@ -1,0 +1,91 @@
+\documentclass[12pt,letterpaper]{beamer}
+\usetheme{Copenhagen}
+\usecolortheme{seahorse}
+\setbeamertemplate{section in toc}{\inserttocsection}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{multirow}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+\title[Robotics I]
+{ENGR 3421: ROBOTICS I}
+\subtitle{Review}
+
+\author[Zhang, Lin]
+{Dr. Lin Zhang}
+\institute[UCA] % (optional)
+{
+  Department of Physics and Astronomy\\
+  University of Central Arkansas
+}
+\date[Robotics1 2021] % (optional)
+{September 7, 2021}
+\logo{\includegraphics[height=1cm]{../images/uca_bear_logo.png}}
+
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the beginning of each section and highlights the current section:
+
+% \AtBeginSection[]
+% {
+  % \begin{frame}
+    % \frametitle{Outline}
+    % \tableofcontents[currentsection]
+  % \end{frame}
+% }
+%------------------------------------------------------------
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after the title page
+% \begin{frame}
+% \frametitle{Outline}
+% \tableofcontents
+% \end{frame}
+%---------------------------------------------------------
+
+% \section{Sonar Sensor}
+
+\begin{frame}{Find Assignment in Github}
+    "Your profile" $\rightarrow$ "Organizations"
+\end{frame}
+
+\begin{frame}{Coding in Python}
+    \begin{itemize}
+        \item Breakdown
+        \item print function
+        \item Google
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{PWM}
+    \begin{itemize}
+        \item Frequency: the higher the better, fixed
+        \item Duty cycle: higher=brighter/faster, variable
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Setup Motor Driver}
+    Get ready for drag race \#2
+\end{frame}
+
+\end{document}

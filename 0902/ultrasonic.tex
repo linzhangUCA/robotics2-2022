@@ -1,0 +1,165 @@
+\documentclass[12pt,letterpaper]{beamer}
+\usetheme{Copenhagen}
+\usecolortheme{seahorse}
+\setbeamertemplate{section in toc}{\inserttocsection}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{multirow}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+\title[Robotics I]
+{ENGR 3421: ROBOTICS I}
+\subtitle{Ultrasonic Distance Sensor}
+
+\author[Zhang, Lin]
+{Dr. Lin Zhang}
+\institute[UCA] % (optional)
+{
+  Department of Physics and Astronomy\\
+  University of Central Arkansas
+}
+\date[Robotics1 2021] % (optional)
+{September 2, 2021}
+\logo{\includegraphics[height=1cm]{../images/uca_bear_logo.png}}
+
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the beginning of each section and highlights the current section:
+
+% \AtBeginSection[]
+% {
+  % \begin{frame}
+    % \frametitle{Outline}
+    % \tableofcontents[currentsection]
+  % \end{frame}
+% }
+%------------------------------------------------------------
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after the title page
+% \begin{frame}
+% \frametitle{Outline}
+% \tableofcontents
+% \end{frame}
+%---------------------------------------------------------
+
+\section{Sonar Sensor}
+
+\begin{frame}{Ultrasound}
+    Ultrasound is high-pitched sound waves with frequencies higher than the audible limit of human hearing.
+    {\centering
+        \includegraphics[width=0.8\linewidth]{ultrasound_frequency}
+    }
+\end{frame}
+
+\begin{frame}{HC-SR04 Ultrasonic Distance Sensor}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \includegraphics[width=1.1\linewidth]{HC-SR04}
+
+        \column{0.5\textwidth}
+        {\scriptsize
+            \begin{itemize} 
+                \item Consists of two ultrasonic transducers: a transmitter and a receiver. 
+                \item The transmitter converts electrical signal into 40 KHz ultrasonic sound pulses. 
+                \item The receiver listens for the transmitted pulses. 
+                \item If receives the pulses back, produces an output pulse to determine the distance. 
+            \end{itemize} 
+        }
+    \end{columns}
+\end{frame}
+
+\begin{frame}{HC-SR04}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \includegraphics[width=1.1\linewidth]{HC-SR04}
+
+        \column{0.5\textwidth}
+        {\scriptsize
+            \begin{tabular}{ cc }
+                \hline
+                Operating Voltage & 5 V  \\
+                \hline
+                Operating Current & 15 mA  \\
+                \hline
+                Ultrasound Frequency & 40 kHz  \\
+                \hline
+                Max Range & 4 m  \\
+                \hline
+                Min Range & 2 cm  \\
+                \hline
+                Ranging Accuracy & 3 mm  \\
+                \hline
+                Measuring Angle & 15 degree  \\
+                \hline
+            \end{tabular}
+        }
+    \end{columns}
+\end{frame}
+
+\begin{frame}{HC-SR04 - No Object Detected}
+    \includegraphics[width=.95\linewidth]{no_object}
+\end{frame}
+
+\begin{frame}{HC-SR04 - Object Detected}
+    \includegraphics[width=.95\linewidth]{object_detect}
+    \begin{equation*}
+        distance = \frac{Speed \times Time}{2} = 0.034cm/{\mu}s \times 500{\mu}s \times 0.5
+    \end{equation*}
+\end{frame}
+
+\begin{frame}{HC-SR04 Workflow}
+
+    {\scriptsize
+        \begin{enumerate}
+            \item A 5 volt pulse of at least 10 $\mu$S (10 microseconds) in duration is applied to the Trigger pin.
+            \item The HC-SR04 responds by transmitting a burst of eight pulses at 40 KHz. This 8-pulse pattern makes the “ultrasonic signature” from the device unique, allowing the receiver to discriminate between the transmitted pattern and the ultrasonic background noise.
+            \item The eight ultrasonic pulses travel through the air away from the transmitter. Meanwhile the Echo pin goes high to start forming the beginning of the echo-back signal.
+            \item If the pulse in NOT reflected back then the Echo signal will timeout after 38 mS (38 milliseconds) and return low. This produces a 38 mS pulse that indicates no obstruction within the range of the sensor.
+            \item If the pulse IS reflected back the Echo pin goes low when the signal is received.  This produces a pulse whose width varies between 150 uS to 25 mS, depending upon the time it took for the signal to be received.
+            \item The width of the received pulse is used to calculate the distance to the reflected object. Remember that the pulse indicates the time it took for the signal to be sent out and reflected back so to get the distance you’ll need to divide your result in half.
+        \end{enumerate}
+    }
+\end{frame}
+
+\begin{frame}{HC-SR04 Limitations}
+
+    {\small
+        \begin{itemize}
+            \item Object too far.
+            \item Object too small.
+            \item Object with soft irregular surface.
+            \item Effect of temperature and humidity. A more accurate distance calculation: $Speed(m/s) = 331.4 + (0.606 * Temp) + (0.0124 * Humidity)$
+            \item Ultrasound may annoying to animals. Please consider your furry friends (Check the \href{https://en.wikipedia.org/wiki/Hearing_range}{hearing range list}).
+        \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}{Voltage Divider}
+    \includegraphics[width=.95\linewidth]{voltage_divider}
+\end{frame}
+
+
+
+\end{document}
+

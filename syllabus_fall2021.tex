@@ -1,0 +1,244 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[lmargin=1in,rmargin=1in,bmargin=1in,tmargin=1in]{geometry}
+
+% -------------------
+% Packages
+% -------------------
+\usepackage{
+	amsmath,		% Math Fonts
+	enumerate,	    % Enumerate Labeling
+	graphicx,		% Include Images
+	tabularx,       % Include Tables
+	xcolor,         % Text Color
+	hyperref,		% Internal Pointers
+	lastpage,		% Reference Lastpage
+	multicol,		% Use Multicolumn
+	multirow,		% Use Multirow
+	titling			% Title Spacing
+}
+
+
+% -------------------
+% Hyperref
+% -------------------
+\hypersetup{
+	colorlinks = true,
+  	linkcolor  = blue,
+  	urlcolor   = blue
+}
+\renewcommand\UrlFont{\normalfont}
+
+
+% -------------------
+% Font
+% -------------------
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+
+% -------------------
+% Commands
+% -------------------
+\newcommand{\lefthead}[2]{\noindent{\large\textbf{#1}\hfill\\[#2]}}
+\newcommand{\pspace}{\par\vspace{\baselineskip}}
+
+% -------------------
+% Course Information
+% -------------------
+
+% Simply fill in the information to fit the current course.
+
+% Instructor
+\newcommand{\instructor}{Lin Zhang}
+% Instructor Office
+\newcommand{\office}{LSC 013}
+% Instructor Number
+\newcommand{\email}{Lzhang12@uca.edu}
+% Course Subject Abbreviation
+\newcommand{\coursecode}{ENGR 3421}
+% Course Title
+\newcommand{\coursetitle}{Robotics I (CRN22663)}
+% Semester
+\newcommand{\semester}{Fall, 2021}
+% Office Hours
+\newcommand{\officehours}{MWF 09:00AM -- 12:00AM} 
+
+% Classroom
+\newcommand{\classroom}{Lewis Annex 105}
+% Classtime
+\newcommand{\classtime}{Tuesday \& Thursday, 10:40 AM--1:30 PM}
+% Telephone
+\newcommand{\telephone}{501-450-5904}
+% Webpage
+\newcommand{\webpage}{\href{https://uca.edu/physics/facultystaff/dr-lin-zhang/}{https://uca.edu/physics/facultystaff/dr-lin-zhang/}}
+
+
+% -------------------
+% Header & Footer
+% -------------------
+\usepackage{fancyhdr}
+
+\fancypagestyle{pages}{
+	%Headers
+	\fancyhead[L]{}
+	\fancyhead[C]{}
+	\fancyhead[R]{}
+\renewcommand{\headrulewidth}{0pt}
+	%Footers
+	\fancyfoot[L]{}
+	\fancyfoot[C]{}
+	\fancyfoot[R]{\thepage \,of \pageref*{LastPage}}
+\renewcommand{\footrulewidth}{0.0pt}
+}
+\headheight=0pt
+\footskip=20pt
+
+\pagestyle{pages}
+
+
+% -------------------
+% Title
+% -------------------
+\title{\Large\bfseries \coursecode: \coursetitle \\[0.1cm] \semester}
+\author{}
+\date{}
+\setlength{\droptitle}{-2cm}
+
+
+% -------------------
+% Content
+% -------------------
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\vspace{-2cm}
+
+
+% Introduction
+\lefthead{Instructor}{0.3cm}
+\indent \emph{Name:} \instructor \\
+\indent \emph{Office:} \office \hspace{.5cm}{\footnotesize I may also appear in LSCA 105 or CCCS 112} \\
+\indent \emph{Office Hours:} \officehours \\
+\indent \emph{Telephone:} \telephone \\
+\indent \emph{Email:} \email \\
+\indent \emph{Webpage:} \webpage \\
+
+% Class Information
+\lefthead{Class \& Lab}{0.3cm}
+\indent \emph{Time:} \classtime \\
+\indent \emph{Classroom:} \classroom \\[0.3cm]
+
+
+\noindent \textbf{\textcolor{red}{All students are expected to comply with the University policy regarding face coverings. UCA’s Coronavirus page for students can be found here: \href{https://uca.edu/coronavirus/students/}{https://uca.edu/coronavirus/students/}. Students having any symptom of COVID-19 should stay at home and report to your healthcare provider. Check CDC with the most updated information of COVID-19. \\\href{https://www.cdc.gov/coronavirus/2019-ncov}{https://www.cdc.gov/coronavirus/2019-ncov}}} 
+
+% Expectations
+\section*{Overview}
+\subsection*{Course Description}
+Robotics I is a course that introduces the basic scientific and engineering knowledge of robots. Students are expected to familiarize the knowledge by assembling and programming autonomous mobile robots with gradually increased complexity. The classes will mix lectures and labs to help students better understand robotics. Students will work independently to build their own robots, but communications and discussions with others is highly encouraged. 
+
+% Prerequisites
+\subsection*{Prerequisites}
+\textbf{No courses nor skills are required in advance.} Though, taking \textbf{ENGR 3410: Microcontrollers} and/or experience of Python programming in Linux may boost the speed of learning. 
+
+% Textbook
+\subsection*{Textbooks}
+\textbf{No textbooks is required.} The students are expected to read a lot of on-line documentations.
+\begin{itemize}
+    \item \href{https://ubuntu.com/tutorials/command-line-for-beginners#1-overview}{https://ubuntu.com/tutorials/command-line-for-beginners} is a useful tutorial to get start with Linux command line.
+    \item \href{https://wiki.python.org/moin/BeginnersGuide/Programmers}{https://wiki.python.org/moin/BeginnersGuide/Programmers} has plenty of tutorials for students to choose and to learn how to program in Python.
+    \item \href{http://wiki.ros.org/ROS/Tutorials}{http://wiki.ros.org/ROS/Tutorials} is a good source to learn Robot Operating System.
+\end{itemize}
+
+% Supplies
+\subsection*{Supplies}
+This course will provide everything for free, including robot assembly parts, microcontrollers, computers, sensors, crafting tools, measuring tools, programming software etc.. Students are welcome to ask the instructor to purchase upgrading materials for their robots.
+
+Students can take their own robots, computers and sensors back home to work, but tools, monitors, keyboards and mice have to be kept in the lab. 
+
+% Attendance
+\subsection*{Classroom Policy}
+The instructor and the students are expected to appear in the classroom/lab in every class. If a student cannot show up on time, he/she needs to contact the instructor in advance. The instructor will notify the students with any change of a class in advance. No food nor drinks are allowed in the classroom/lab.
+
+% Gredes
+\subsection*{Grading}
+A’s are 90-100\%, B’s are 80-89\%, C’s are 65-79\%, D's are 64-50\%, F's are 0-49\%. The final grade will be determined by following criteria.
+
+\begin{tabularx}{0.8\textwidth} { 
+   >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X } 
+ Component & Percentage \\
+ \hline
+ Attendance  & 1\% \\
+ Assignments  & 24\% \\
+ Mid-term Project  & 35\% \\
+ Final Project  & 40\% \\
+\hline
+Total  & 100\% \\
+
+\end{tabularx}
+
+% Policies
+\subsection*{Other Policies}
+The policies and procedures detailed in the UCA 2020-21 Student handbook  are also part of this syllabus. Please refer to the relevant policies as your guidance. \\
+\noindent \href{https://uca.edu/student/files/2021/03/STUDENT-HANDBOOK-2020-21-2.pdf}{https://uca.edu/student/files/2021/03/STUDENT-HANDBOOK-2020-21-2.pdf}
+
+If a student discloses an act of sexual harassment, discrimination, assault, or other sexual misconduct to a faculty member (as it relates to “student-on-student” or “employee-on-student”), the faculty member cannot maintain complete confidentiality and is required to report the act and may be required to reveal the names of the parties involved. Any allegations made by a student may or may not trigger an investigation. Each situation differs and the obligation to conduct an investigation will depend on those specific set of circumstances. The determination to conduct an investigation will be made by the Title IX Coordinator. For further information, please visit: \href{https://uca.edu/titleix}{https://uca.edu/titleix}. *Disclosure of sexual misconduct by a third party who is not a student and/or employee is also required if the misconduct occurs when the third party is a participant in a university-sponsored program, event, or activity 
+
+The University of Central Arkansas affirms its commitment to academic integrity and expects all members of the university community to accept shared responsibility for maintaining academic integrity. Students in this course are subject to the provisions of the university's Academic Integrity Policy, approved by the Board of Trustees as \href{https://uca.edu/board/files/2010/11/709.pdf}{Board Policy No. 709} on February 10, 2010, and published in the Student Handbook. Penalties for academic misconduct in this course may include a failing grade on an assignment, a failing grade in the course, or any other course-related sanction the instructor determines to be appropriate. Continued enrollment in this course affirms a student's acceptance of this university policy.
+
+In addition to UCA’s Academic Integrity policy we will also be mindful and knowledgeable of the National
+Society of Professional Engineers Code of Ethics. \\
+\href{https://www.nspe.org/resources/ethics/codeethics}{https://www.nspe.org/resources/ethics/codeethics}
+
+The University of Central Arkansas adheres to the requirements of the Americans with Disabilities Act. If you need an accommodation under this Act due to a disability, please contact the UCA Office of Disability Services, 501-450-3613.
+
+
+\section*{Course Contents}
+Please refer to the following for a tentative course plan. The actual contents will be subject to changes due to the progress of the course.
+
+\subsection*{Module 1 - Introduction to Robotics}
+\begin{itemize}
+    \item Introduction to the world of robotics, with demonstrations of different kinds of robots and applications.
+    \item Assembling the mobile robots which will be the physical developing platforms for students' learning in the rest of the course.
+    \item Getting start with Github Classroom for retrieving project files and getting feedback from the instructor.
+\end{itemize}
+ 
+\subsection*{Module 2 - Introduction to Raspberry Pi}
+\begin{itemize}
+    \item Introduced to the microcontroller, RaspberryPi.
+    \item Learning basics of Linux operating system and command line.
+    \item Getting start with programming in Python.
+\end{itemize}
+
+\subsection*{Module 3 - Introduction to Sensors and Actuators}
+\begin{itemize}
+    \item Interaction with simple RaspberryPi add-ons (e.g., LEDs, buzzers, distance sensors, etc..).
+    \item Fundamental of DC motors and the usage of a motor driver.
+    \item Fundamental of Light Detection and Ranging sensor and the usage of RPLidar-A1.
+    \item (Optional) Introduction to RaspberryPi Cameras
+\end{itemize}
+
+\subsection*{Module 4 - Introduction to Robot Operating System (ROS)}
+\begin{itemize}
+    \item Getting started with ROS.
+    \item Programming in ROS using Python.
+    \item Configure the ROS Network and remote developing environment.
+\end{itemize}
+
+\subsection*{(Optional) Module 5 - Gazebo Simulation}
+\begin{itemize}
+    \item Introduction to Gazebo Simulation and setting up a simulation world.
+    \item Building a robot model using URDF format.
+    \item Attach sensors and actuators to the robot in Gazebo.
+\end{itemize}
+
+\subsection*{Module 6 - Autonomous Navigation}
+\begin{itemize}
+    \item Mapping.
+    \item Localization.
+    \item Planning.
+    \item Control.
+\end{itemize}
+In the final module, students are expected to develop an autonomous navigation application for their robots. The robots are expected to autonomously maneuver to given locations in maps created by the robots. Students will learn how to set up and configure the navigation stack on their robots using ROS. Final demonstration will be given to the peers.     
+
+\end{document}
