@@ -1,4 +1,4 @@
-This repository hosts most (if not all) course material for **ENGR 3421: Robotics 1** in Fall, 2021. Find lecture slides in folders named after dates. The useful technical resources can be found in this `README` file. 
+This repository hosts most (if not all) course material for **ENGR 4421: Robotics 2** in Spring, 2022. Find lecture slides named after dates. 
 
 # Technical Resources
 Please refer to [wiki](https://github.com/linzhangUCA/robotics1-2021/wiki).
