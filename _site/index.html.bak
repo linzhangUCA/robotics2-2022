@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Lecture Slides - ENGR4421: Robotics II</title>
-<meta name="description" content="Robotics II Lectures &amp; Workshops: Tue/Thu 10:50 a.m. - 1:30 p.m., LSCA 105">
+<!-- begin _includes/seo.html --><title>Robotics II - ENGR4421: Robotics II</title>
+<meta name="description" content="Lectures(Workshops): Tue/Thu 10:50 a.m. - 1:30 p.m., LSCA 105">
 
 
   <meta name="author" content="Lin Zhang">
@@ -20,14 +20,11 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="ENGR4421: Robotics II">
-<meta property="og:title" content="Lecture Slides">
-<meta property="og:url" content="http://localhost:4000/robotics2-2022/">
+<meta property="og:title" content="Robotics II">
+<meta property="og:url" content="http://localhost:4000/robotics2-2022/.bak">
 
 
-  <meta property="og:description" content="Robotics II Lectures &amp; Workshops: Tue/Thu 10:50 a.m. - 1:30 p.m., LSCA 105">
-
-
-
+  <meta property="og:description" content="Lectures(Workshops): Tue/Thu 10:50 a.m. - 1:30 p.m., LSCA 105">
 
 
 
@@ -36,12 +33,15 @@
 
 
 
-  
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/robotics2-2022/">
+
+<link rel="canonical" href="http://localhost:4000/robotics2-2022/.bak">
 
 
 
@@ -92,7 +92,7 @@
 
   </head>
 
-  <body class="layout--splash">
+  <body class="layout--home">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -146,18 +146,18 @@
 
 
 <div class="page__hero--overlay"
-  style="background-color: #ffffff; background-image: linear-gradient(rgba(79, 45, 127, 0.9), rgba(129, 138, 143, 0.5)), url('');"
+  style="background-color: #4F2D7F; background-image: url('');"
 >
   
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Lecture Slides
+          Robotics II
 
         
       </h1>
       
-        <p class="page__lead">Robotics II<br /> <small>Lectures &amp; Workshops: Tue/Thu 10:50 a.m. - 1:30 p.m., LSCA 105<br /></small>
+        <p class="page__lead">Lectures(Workshops): Tue/Thu 10:50 a.m. - 1:30 p.m., LSCA 105
 </p>
       
       
@@ -172,22 +172,33 @@
 
 
 
+
+
 <div id="main" role="main">
-  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Lecture Slides">
-    <meta itemprop="description" content="Robotics II Lectures &amp; Workshops: Tue/Thu 10:50 a.m. - 1:30 p.m., LSCA 105">
-    
-    
+  
 
-    <section class="page__content" itemprop="text">
-      <h2 id="lecture-slides">Lecture Slides</h2>
-<!-- [0203](https://drive.google.com/file/d/197G2lAsLe_DaKm02tztSxqQHbu152haM/view?usp=sharing) -->
-<p><a href="https://linzhanguca.github.io/robotics2-2022/0203_transforms.pdf">0203</a></p>
 
-    </section>
-  </article>
+  <div class="archive">
+    
+    <h2 class="secondary-title">Lecture Slides</h2>
+<a href="/docs/slides/0203_transforms.pdf" target="_blank">0203 Transforms</a> 
+
+
+
+<h3 class="archive__subtitle">Recent posts</h3>
+
+
+
+
+<div class="entries-list">
+  
 </div>
 
+
+
+
+  </div>
+</div>
     </div>
 
     
