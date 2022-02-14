@@ -21,4 +21,4 @@ excerpt: >
 - [0208: URDF](https://drive.google.com/file/d/1DXEDGwWpaFWe_Xzx93hXRPVSj-GOh14P/view?usp=sharing)
 
 ## Projects
-- [Project 1]([0113: Review](https://drive.google.com/file/d/1myNkmdN0ZbFp8ERbYeUHq-0NLbF0I3S7/view?usp=sharing))
+- [Project 1](https://drive.google.com/file/d/1myNkmdN0ZbFp8ERbYeUHq-0NLbF0I3S7/view?usp=sharing)
