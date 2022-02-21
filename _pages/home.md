@@ -20,6 +20,7 @@ excerpt: >
 - [0203: Transforms](https://drive.google.com/file/d/197G2lAsLe_DaKm02tztSxqQHbu152haM/view?usp=sharing)
 - [0208: URDF](https://drive.google.com/file/d/1DXEDGwWpaFWe_Xzx93hXRPVSj-GOh14P/view?usp=sharing)
 - [0215: Gazebo](https://drive.google.com/file/d/1aXFFRoTvQ1D2q7GJwJWFAl5qPwVjJcl6/view?usp=sharing)
+- [0222: PID Control](https://drive.google.com/file/d/1jtvEKg3xgLejO2LNSLDd6bRlYhNAuO2t/view?usp=sharing)
 
 ## Projects
 - [Project 1](https://drive.google.com/file/d/121U3P6LwjLMlKpd6Tav7CEM9aVC6RvCz/view?usp=sharing)
