@@ -25,3 +25,4 @@ excerpt: >
 
 ## Projects
 - [Project 1](https://drive.google.com/file/d/121U3P6LwjLMlKpd6Tav7CEM9aVC6RvCz/view?usp=sharing)
+- [Project 2](https://drive.google.com/file/d/1TvJ7v8AgX4dXRWZ0L7ft-3dh7ijJCdnv/view?usp=sharing)
